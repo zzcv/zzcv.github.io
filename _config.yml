@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 # Site
 title: 2ge.me
-subtitle:  日记，笔记以及一些稀奇古怪的分享。Hive fun！
-description: 一线码农+二线产品+兼职Devops运维，喜好折腾各种炫酷神技，   以期提升"装X实力"。^.^
+subtitle:  工作日常、学习笔记及稀奇古怪的分享。Hive fun！
+description: 一线码农+二线产品+兼职Devops运维，喜好折腾各种炫酷新技能。
 author: 2ge
 language: zh-Hans
 timezone:
-
+favicon: /favicon.ico
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://2ge.me
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
 # Directory
 source_dir: source
 public_dir: public
@@ -52,14 +53,14 @@ date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
-ndex_generator:
+index_generator:
   per_page: 5
+
 archive_generator:
   per_page: 20
   yearly: true
   monthly: true
+
 tag_generator:
   per_page: 10
 
@@ -67,6 +68,11 @@ tag_generator:
 i18n:
   type: [page, post]
   generator: [index, archive, category, tag]
+
+#search
+search:
+  path: search.xml
+  field: post
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
